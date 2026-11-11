@@ -1,0 +1,189 @@
+/* Variáveis de cores e espaçamentos */
+:root {
+    --verde: #2e7d32;
+    --verde-claro: #c8e6c9;
+    --branco: #ffffff;
+    --preto: #333333;
+    --laranja: #ff9800;
+    --espaco: 1rem;
+    --borda: 0.5rem;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: var(--preto);
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* rem ajuda a adaptar o tamanho da fonte */
+}
+
+#cabecalho-principal {
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    color: var(--verde);
+    font-size: 1.5rem;
+}
+
+section {
+    background-color: var(--branco);
+    margin: 1rem;
+    padding: var(--espaco);
+}
+
+.card {
+    background-color: var(--verde-claro);
+    border: 1px solid var(--verde);
+    border-radius: var(--borda);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.destaque {
+    background-color: var(--laranja);
+    padding: 0.5rem;
+    border-radius: var(--borda);
+}
+
+.botao {
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid var(--verde);
+    border-radius: var(--borda);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main > section {
+    border-radius: var(--borda);
+}
+
+a:link {
+    color: var(--verde);
+}
+
+a:visited {
+    color: #6a1b9a;
+}
+
+a:hover {
+    color: var(--laranja);
+}
+
+a:active {
+    color: red;
+}
+
+a.botao:link,
+a.botao:visited {
+    color: white;
+}
+
+a.botao:hover {
+    color: yellow;
+}
+
+a.botao:active {
+    color: red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--verde);
+    padding: 0.5rem;
+}
+
+th {
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Título do formulário */
+#formulario h2 {
+    text-align: center;
+}
+
+/* Organização dos campos */
+fieldset {
+    border: 1px solid #a5d6a7;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Textos dos campos */
+label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Campos para preencher */
+#formulario input,
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.4rem 0 1rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+/* Botão de enviar */
+#formulario button {
+    width: 100%;
+    background-color: #2e7d32;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+#formulario button:hover {
+    background-color: #1b5e20;
+}
