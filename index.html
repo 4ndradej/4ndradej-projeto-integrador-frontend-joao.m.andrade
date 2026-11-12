@@ -21,15 +21,31 @@
             Nosso objetivo é conectar animais que precisam de um lar
             com pessoas dispostas a oferecer amor e cuidado.
         </p>
-         <nav>
+    </header>
+
+    <nav class="navbar">
+         <button class="menu-hamburguer"
+            aria-label="Abrir menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
         <ul class="menu">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#animais">Animais</a></li>
+            <li><a href="#inicio" class="ativo">Início</a></li>
+
+            <li class="item-dropdown">
+                <a href="#animais">Animais ▼</a>
+
+                <ul class="dropdown">
+                    <li><a href="#cachorros">Cachorros</a></li>
+                    <li><a href="#gatos">Gatos</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#Cuidados">Cuidados</a></li>
             <li><a href="#formulario">Quero adotar</a></li>
         </ul>
     </nav>
-    </header>
-
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
@@ -86,13 +102,13 @@
                  alt="Cachorro e gato juntos aguardando adoção"
                  width="400">
             
-              <div class="card">
+              <div id="cachorros" class="card">
             <h3>xupetinha</h3>
             <p>cadela disponível para adoção.</p>
             <a href="#formulario" class="botao">Quero adotar</a>
         </div>
 
-        <div class="card">
+        <div id="gatos" class="card">
             <h3>xikitinha</h3>
             <p>Gata disponível para adoção.</p>
             <a href="#formulario" class="botao">Quero adotar</a>
@@ -103,7 +119,7 @@
         </section>
 
         <!-- SEGUNDA SEÇÃO -->
-        <section>
+        <section id="Cuidados">
             <h2>Cuidados com os animais</h2>
 
             <table border="1">
@@ -134,7 +150,7 @@
         </section>
 
         <!-- TERCEIRA SEÇÃO: FORMULÁRIO -->
-        <section>
+        <section id="formulario">
             <h2>Formulário de interesse em adoção</h2>
 
             <p>
