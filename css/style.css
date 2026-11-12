@@ -187,3 +187,48 @@ label {
 #formulario button:hover {
     background-color: #1b5e20;
 }
+
+/* Menu de navegação usando Flexbox */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Links do menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Quando passar o mouse ou selecionar pelo teclado */
+.menu a:hover,
+.menu a:focus-visible {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Grade dos animais usando Grid */
+.grade-animais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Primeiro card com uma cor diferente */
+.grade-animais .card:first-child {
+    background-color: #c8e6c9;
+}
+
+/* Efeito ao passar o mouse nos cards */
+/* Usamos transform para movimentar o card sem alterar sua largura ou altura. */
+.grade-animais .card {
+    transition: transform 0.3s;
+}
+
+.grade-animais .card:hover {
+    transform: translateY(-5px);
+}
